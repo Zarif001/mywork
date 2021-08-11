@@ -1,0 +1,99 @@
+@media(prefers-color-scheme: dark){
+    :root{
+        --primary-background:#151437;
+        --primary-text-color:#ffffff;
+    }
+    body{
+        background: var(--primary-background);
+    }
+    .header__logo::before{
+        content: url('../images/logo.dark.png');
+    }
+    .header__content-text{
+        color: var(--primary-text-color);
+    }
+    .header__toggler{
+        color:var(--primary-text-color);
+    }
+    .main__about-text{
+        background:#7177f1;
+        color: var(--primary-background);
+    }
+    .main__about-content{
+        background: var(--primary-background);
+    }
+    .main__about-p{
+        color: var(--primary-text-color);
+    }
+    .accordion-button .collapsed{
+        background: var(--primary-background) !important;
+        
+    }
+    .accordion-item{
+        border: none !important;
+    }
+    .main__works-link{
+        background: var(--primary-background);
+    }
+    .main__works-link.active{
+        color: var(--primary-background);
+    }
+    .main__worls-description{
+        color: var(--primary-text-color);
+    }
+    .footer__link, .footer__contact{
+        color: var(--primary-text-color);
+    }
+    .footer__link:hover, .footer__contact:hover{
+        color: var(--primary-text-color);
+    }
+
+    
+    
+}
+@media(max-width:992px){
+    .header__link, .header__button{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .header__content-items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main__about-img{
+        width: 100%;
+    }
+    .main__about-content{
+        margin-top: 15px;
+    }
+    .main__about-text{
+        left: 70px;
+        top: -35px;
+    }
+    .accordion{
+        margin-bottom: 20px;
+    }
+    .shape_2{
+        width: 100%;
+    }
+    .main__works-content{
+        margin-top: 15px;
+    }
+}
+@media(max-width:565px){
+    .rectangle{
+        display: none;
+    }
+    .header__content-left{
+        margin-right: 0;
+    }
+    .main__about-btn{
+        margin: auto;
+    }
+}
+@media(max-width:375px){
+    .header__content-skills{
+        flex-direction: column;
+        align-items: center;
+    }
+}
